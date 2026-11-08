@@ -1,0 +1,4 @@
+node_modules/
+dist/
+installer-output/
+src-tauri/target/

@@ -1,0 +1,14 @@
+{
+  "name": "flappy-dusk-desktop",
+  "version": "1.0.0",
+  "description": "Desktop build source for Flappy Dusk",
+  "private": true,
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "build:win": "tauri build --bundles nsis"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  }
+}
