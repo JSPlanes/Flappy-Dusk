@@ -6,7 +6,9 @@ The app opens on the flight settings screen. Choose the flight options and click
 
 The desktop app creates a `saves` folder in its per-user application data directory and stores progress in `progress.json`. Website progress remains in encrypted browser storage; use the recovery-code controls on the website to back up or transfer it.
 
-The app, installer, uninstaller, and optional desktop shortcut use `flappybird-logo.png`. The Windows installer uses Flappy Dusk colors and artwork, includes the standard install-location and Start Menu steps, and lets you create a desktop shortcut from its final screen.
+The browser tab and in-game branding use `app/flappybird-logo.png`. The Windows app, installer, uninstaller, and optional desktop shortcut use a multi-resolution icon generated from that artwork. The Windows installer uses Flappy Dusk colors and artwork, includes the standard install-location and Start Menu steps, and lets you create a desktop shortcut from its final screen.
+
+The app checks GitHub Releases at startup and has a **Check for updates** button in the top-left corner. When a newer release is available, follow its link to download it. Update checks require an internet connection.
 
 ## Requirements
 

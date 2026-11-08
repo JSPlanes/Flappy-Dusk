@@ -21,6 +21,7 @@ fn main() {
         })
         .invoke_handler(tauri::generate_handler![
             set_game_fullscreen,
+            get_app_version,
             load_game_save,
             save_game_save
         ])
@@ -33,6 +34,11 @@ fn set_game_fullscreen(window: tauri::Window, fullscreen: bool) -> Result<(), St
     window
         .set_fullscreen(fullscreen)
         .map_err(|error| error.to_string())
+}
+
+#[tauri::command]
+fn get_app_version(app: tauri::AppHandle) -> String {
+    app.package_info().version.to_string()
 }
 
 #[tauri::command]
